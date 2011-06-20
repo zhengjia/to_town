@@ -15,6 +15,130 @@ Command line:
 * run `to_town populate` to load the data to mongodb
 * run `to_town --lat=some_latitude_value --lng=some_longitude_value` to check the result
 
+Example:
+
+to_town check --lat=45.018625 --lng=-93.239039
+
+ St. Anthony MN
+                      latitude: 45.027324
+                      longitude: -93.215533
+                      land area: 5831140
+                      water area: 305693
+
+ Columbia Heights MN
+                      latitude: 45.049104
+                      longitude: -93.246749
+                      land area: 8832769
+                      water area: 284420
+
+ Hilltop MN
+                      latitude: 45.053564
+                      longitude: -93.250129
+                      land area: 310173
+                      water area: 0
+
+ Lauderdale MN
+                      latitude: 44.994407
+                      longitude: -93.203134
+                      land area: 1086715
+                      water area: 2752
+
+ New Brighton MN
+                      latitude: 45.064894
+                      longitude: -93.209271
+                      land area: 16731107
+                      water area: 1545061
+
+ Minneapolis MN
+                      latitude: 44.963324
+                      longitude: -93.268284
+                      land area: 139789184
+                      water area: 9052448
+
+ Fridley MN
+                      latitude: 45.084246
+                      longitude: -93.26005
+                      land area: 26329217
+                      water area: 1873882
+
+ Falcon Heights MN
+                      latitude: 44.988048
+                      longitude: -93.174718
+                      land area: 5785375
+                      water area: 16906
+
+ Roseville MN
+                      latitude: 45.015422
+                      longitude: -93.155011
+                      land area: 33679465
+                      water area: 2168129
+
+ Arden Hills MN
+                      latitude: 45.071161
+                      longitude: -93.165504
+                      land area: 22253249
+                      water area: 2743210
+
+ Brooklyn Center MN
+                      latitude: 45.069204
+                      longitude: -93.31463
+                      land area: 20604569
+                      water area: 974924
+
+ Robbinsdale MN
+                      latitude: 45.024518
+                      longitude: -93.33063
+                      land area: 7227970
+                      water area: 498069
+
+ Mounds View MN
+                      latitude: 45.106737
+                      longitude: -93.206834
+                      land area: 10426960
+                      water area: 242861
+
+ Spring Lake Park MN
+                      latitude: 45.11593
+                      longitude: -93.245164
+                      land area: 5128318
+                      water area: 235200
+
+ Crystal MN
+                      latitude: 45.03731
+                      longitude: -93.359478
+                      land area: 14968150
+                      water area: 253140
+
+ Golden Valley MN
+                      latitude: 44.990233
+                      longitude: -93.358736
+                      land area: 26403999
+                      water area: 893369
+
+ Shoreview MN
+                      latitude: 45.084644
+                      longitude: -93.134281
+                      land area: 27905063
+                      water area: 4915160
+
+ Lexington MN
+                      latitude: 45.138122
+                      longitude: -93.171359
+                      land area: 1773960
+                      water area: 0
+
+ Brooklyn Park MN
+                      latitude: 45.110906
+                      longitude: -93.349088
+                      land area: 67528977
+                      water area: 1290210
+
+ St. Louis Park MN
+                      latitude: 44.948681
+                      longitude: -93.365035
+                      land area: 27547693
+                      water area: 572659
+
 == Data source
 
 * US 2010 Census http://www.census.gov/geo/www/gazetteer/files/Gaz_places_national.txt.
