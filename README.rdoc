@@ -5,10 +5,11 @@ Other data sources can be added if available.
 
 == Usage
 
-Install the gem: gem install to_town
-run `bundle exec to_town config` to generate a mongoid.yml in the current directory
-run `bundle exec to_town populate` to load the data to mongodb
-run `bundle exec to_town some_latitude_value some_longitude_value` to check the result
+* Install the gem: gem install to_town
+* On your Gemfile add to_town
+* run `to_town config` to generate a mongoid.yml in the current directory
+* run `to_town populate` to load the data to mongodb
+* run `to_town some_latitude_value some_longitude_value` to check the result
 
 == Data source
 

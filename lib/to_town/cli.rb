@@ -8,12 +8,12 @@ require 'to_town/generators/mongodb'
 module ToTown
   class CLI < Thor
 
-    desc "populate", "populate mongodb with US 2010 census data"
+    desc "populate", "populate data to mongodb"
     def populate
       ToTown::Converter::Us.run
     end
 
-    desc "check --lat some_value --lng some_value", "acceps two arguments latitude and longitude"
+    desc "check", "acceps two arguments --lat and --lng"
     method_option :lat, :required => true
     method_option :lng, :required => true
     def check
