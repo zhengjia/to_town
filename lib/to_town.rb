@@ -1,4 +1,5 @@
 require 'to_town/point'
+require 'to_town/db_connection'
 
 module ToTown
 
