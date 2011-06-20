@@ -17,11 +17,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "to_town"
   gem.homepage = "http://github.com/zhengjia/to_town"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Find nearby towns of a geographic latitude and longitude}
+  gem.description = %Q{Find nearby towns of a geographic latitude and longitude}
   gem.email = "jiazheng@live.com"
   gem.authors = ["zhengjia"]
-  # dependencies defined in Gemfile
+  gem.executables = ['to_town']
 end
 Jeweler::RubygemsDotOrgTasks.new
 

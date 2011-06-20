@@ -1,0 +1,16 @@
+defaults: &defaults
+  host: localhost
+
+development:
+  <<: *defaults
+  database: to_town_development
+
+test:
+  <<: *defaults
+  database: to_town_test
+
+production:
+  host: <%= ENV['MONGOID_HOST'] %>
+  port: <%= ENV['MONGOID_PORT'] %>
+  username: <%= ENV['MONGOID_USERNAME'] %>
+  password: <%= ENV['MONGOID_PASSWORD'] %>

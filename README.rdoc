@@ -3,6 +3,13 @@
 Find nearby towns of a geographic latitude and longitude. Currently it only has US locations.
 Other data sources can be added if available.
 
+== Usage
+
+Install the gem: gem install to_town
+run `bundle exec to_town config` to generate a mongoid.yml in the current directory
+run `bundle exec to_town populate` to load the data to mongodb
+run `bundle exec to_town some_latitude_value some_longitude_value` to check the result
+
 == Data source
 
 * US 2010 Census http://www.census.gov/geo/www/gazetteer/files/Gaz_places_national.txt.
