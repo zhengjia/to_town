@@ -13,11 +13,12 @@ module ToTown
       ToTown::Converter::Us.run
     end
 
-    desc "check", "acceps two arguments --lat and --lng"
+    desc "check", "acceps two required arguments --lat and --lng, and an optional --limit"
     method_option :lat, :required => true
     method_option :lng, :required => true
+    method_option :limit, :type => :numeric
     def check
-      points = ToTown.check(options[:lat].to_f, options[:lng].to_f)
+      points = ToTown.check(options[:lat].to_f, options[:lng].to_f, options[:limit])
             points.each do |point|
               puts %{ #{point.name} #{point.state}\t
                       type: #{point.town_type}\t

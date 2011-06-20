@@ -8,7 +8,7 @@ Other data sources can be added if available.
 * Install the gem: gem install to_town
 * add to_town to your Gemfile
 * add require 'to_town' to your code
-* You can get a list of nearby points by calling ToTown.check(some_latitude_value,some_longitude_value)
+* You can get a list of nearby points by calling ToTown.check(some_latitude_value, some_longitude_value, results_limit)
 
 Command line:
 * run `to_town config` to generate a mongoid.yml in the current directory
@@ -17,7 +17,7 @@ Command line:
 
 Example:
 
-to_town check --lat=45.018625 --lng=-93.239039
+to_town check --lat=45.018625 --lng=-93.239039 --limit=10
 
 St. Anthony MN
                      type: city
@@ -88,76 +88,6 @@ Arden Hills MN
                      longitude: -93.165504
                      land area: 22253249
                      water area: 2743210
-
-Brooklyn Center MN
-                     type: city
-                     latitude: 45.069204
-                     longitude: -93.31463
-                     land area: 20604569
-                     water area: 974924
-
-Robbinsdale MN
-                     type: city
-                     latitude: 45.024518
-                     longitude: -93.33063
-                     land area: 7227970
-                     water area: 498069
-
-Mounds View MN
-                     type: city
-                     latitude: 45.106737
-                     longitude: -93.206834
-                     land area: 10426960
-                     water area: 242861
-
-Spring Lake Park MN
-                     type: city
-                     latitude: 45.11593
-                     longitude: -93.245164
-                     land area: 5128318
-                     water area: 235200
-
-Crystal MN
-                     type: city
-                     latitude: 45.03731
-                     longitude: -93.359478
-                     land area: 14968150
-                     water area: 253140
-
-Golden Valley MN
-                     type: city
-                     latitude: 44.990233
-                     longitude: -93.358736
-                     land area: 26403999
-                     water area: 893369
-
-Shoreview MN
-                     type: city
-                     latitude: 45.084644
-                     longitude: -93.134281
-                     land area: 27905063
-                     water area: 4915160
-
-Lexington MN
-                     type: city
-                     latitude: 45.138122
-                     longitude: -93.171359
-                     land area: 1773960
-                     water area: 0
-
-Brooklyn Park MN
-                     type: city
-                     latitude: 45.110906
-                     longitude: -93.349088
-                     land area: 67528977
-                     water area: 1290210
-
-St. Louis Park MN
-                     type: city
-                     latitude: 44.948681
-                     longitude: -93.365035
-                     land area: 27547693
-                     water area: 572659
 
 == Data source
 
