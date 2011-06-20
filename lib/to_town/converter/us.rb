@@ -22,7 +22,7 @@ module ToTown
                 line = iconv.iconv(line) unless line.valid_encoding?
                 data = line.chomp.split(/\t/)
                 name_town_type = data[3].split(/ ((?=[[:lower:]])|CDP)/)
-                ToTown::Point.create(:state => data[0], :geoid => data[1], :ansicode => data[2], :name => name_town_type[0], :town_type => (name_town_type-[name_town_type[0]]).join, :aland => data[4], :awater => data[4], :latlng => [data[7].to_f, data[8].to_f] )
+                ToTown::Point.create(:state => data[0], :geoid => data[1], :ansicode => data[2], :name => name_town_type[0], :town_type => (name_town_type-[name_town_type[0]]).join, :aland => data[4], :awater => data[5], :latlng => [data[8].to_f, data[9].to_f] )
               end # end while
             end # end File.open
           end # end if dry == 0
