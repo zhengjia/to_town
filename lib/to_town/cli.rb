@@ -13,17 +13,19 @@ module ToTown
       ToTown::Converter::Us.run
     end
 
-    desc "check latitude longitude", "acceps two arguments latitude and longitude"
-    def check(lat, lon)
-      points = ToTown.check(lat.to_f, lon.to_f)
-      points.each do |point|
-        puts %{ #{point.name} #{point.state}\t
-                latitude:#{point.latlng[0]}\t
-                longitude:#{point.latlng[1]}\t
-                land area:#{point.aland}\t
-                water area#{point.awater}
-              }
-      end
+    desc "check --lat some_value --lng some_value", "acceps two arguments latitude and longitude"
+    method_option :lat, :required => true
+    method_option :lng, :required => true
+    def check
+      points = ToTown.check(options[:lat].to_f, options[:lng].to_f)
+            points.each do |point|
+              puts %{ #{point.name} #{point.state}\t
+                      latitude:#{point.latlng[0]}\t
+                      longitude:#{point.latlng[1]}\t
+                      land area:#{point.aland}\t
+                      water area#{point.awater}
+                    }
+            end
     end
 
     desc "config", "generate database configuration file mongoid.yml"
