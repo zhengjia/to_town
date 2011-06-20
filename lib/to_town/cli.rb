@@ -20,6 +20,7 @@ module ToTown
       points = ToTown.check(options[:lat].to_f, options[:lng].to_f)
             points.each do |point|
               puts %{ #{point.name} #{point.state}\t
+                      type: #{point.town_type}\t
                       latitude: #{point.latlng[0]}\t
                       longitude: #{point.latlng[1]}\t
                       land area: #{point.aland}\t
